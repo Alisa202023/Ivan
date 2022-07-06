@@ -25,7 +25,7 @@ body{
 .content{
     padding: 0px 5px;
 }
-h1{
+h1, h2{
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
@@ -61,6 +61,12 @@ header{
                         }
                     }
                 }
+            }
+        }
+        .right{
+            width: 218px;
+            .contacts{
+                float: right;
             }
         }
     }
@@ -370,45 +376,7 @@ header{
         }
     }
 }
-@media screen and (min-width: 970px){
-    header{
-    .header{
-        display: flex;
-    }
-    .header__mobile{
-        display: none;
-    }
-    } 
-}
-@media screen and (min-width: 1050px){
-    header{
-        .header{
-            .center{
-                max-width: 520px;
-                .menu{
-                    nav{
-                        ul{
-                            display: flex;
-                            justify-content: space-between;
-                            li{
-                                font-size: 16px;
-                            }
-                        }
-                    }
-                }
-            }
-        }       
-    }
-    .logo{
-        &__desc{
-            .title{
-                font-size: 18px;   
-            }
-            .subtitle{
-                font-size: 16px;
-            }
-        }
-    }
+@media screen and (min-width: 1050px){    
     .languages{
         font-size: 16px;
     }
@@ -418,16 +386,45 @@ header{
         }
     }
 }
-@media screen and (min-width: 1170px){
+@media screen and (min-width: 1149px){
+    header{
+    .header{
+        display: flex;
+    }
+    .header__mobile{
+        display: none;
+    }
+    } 
+}
+@media screen and (min-width: 1150px){
     header{
         .header{
             .center{
-                max-width: 550px;
+                max-width: 620px;
+                .menu{
+                    nav{
+                        ul{
+                            display: flex;
+                            justify-content: space-between;
+                            li{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }       
+    }
+}
+@media screen and (min-width: 1280px){
+    header{
+        .header{
+            .center{
                 .menu{
                     nav{
                         ul{
                             li{
-                                font-size: 18px;
+                                font-size: 16px;
                             }
                         }
                     }
@@ -435,6 +432,9 @@ header{
             }
         }
     }
+}
+
+@media screen and (min-width: 1350px){
     .logo{
         &__img{
             margin-right: 5px;
@@ -457,7 +457,19 @@ header{
     header{
         .header{
             .center{
-                max-width: 650px;
+                max-width: 750px;
+                .menu{
+                    nav{
+                        ul{
+                            li{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+            .right{
+                width: 280px;
             }
         }
     }
@@ -471,6 +483,11 @@ h1{
     font-weight: 900;
     letter-spacing: 0.15em;
     text-transform: uppercase;
+}
+h2{
+    font-size: 24px;
+    line-height: 39px;
+    font-weight: 500;
 }
 p{
     font-size: 16px;
@@ -525,6 +542,31 @@ main .virtual__img, main .app__img{
         }
     }
 }
+.telegram{
+    margin-top: 20px;
+    a{
+        display: flex;
+        max-width: 250px;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(180deg, rgba(13, 43, 61, 0.3) 0%, rgba(2, 2, 4, 0.3) 100%);
+        border: 2px solid #039BE5;
+        border-radius: 30px;
+        img{
+            margin-left: -5px;
+            width: 40px;
+        }
+        p{
+            margin-top: 0!important;
+        }
+        &:hover{
+            color: #fff;
+            background: linear-gradient(180deg, rgba(13, 43, 61, 0.5) 0%, rgba(2, 2, 4, 0.5) 100%);
+        }
+    }
+}
 main{
     .background{
         position: absolute;
@@ -555,32 +597,6 @@ main{
             margin: 0 auto;
             margin-top: 10px;
             max-width: 450px;
-        }
-        .telegram{
-            margin-top: 20px;
-            
-            a{
-                display: flex;
-                max-width: 250px;
-                width: 100%;
-                margin: 0 auto;
-                align-items: center;
-                justify-content: center;
-                background: linear-gradient(180deg, rgba(13, 43, 61, 0.3) 0%, rgba(2, 2, 4, 0.3) 100%);
-                border: 2px solid #039BE5;
-                border-radius: 30px;
-                img{
-                    margin-left: -5px;
-                    width: 40px;
-                }
-                p{
-                    margin-top: 0;
-                }
-                &:hover{
-                    color: #fff;
-                    background: linear-gradient(180deg, rgba(13, 43, 61, 0.5) 0%, rgba(2, 2, 4, 0.5) 100%);
-                }
-            }
         }
     }
     .virtual .containers, .app .containers{
@@ -684,14 +700,14 @@ footer{
                 margin-top: 10px;
                 max-width: 450px;
             }
-            .telegram{
-                margin-top: 20px;
-                a{
-                    max-width: 320px;
-                    img{
-                        width: 40px;
-                    }
-                }
+        }
+    }
+    .telegram{
+        margin-top: 20px;
+        a{
+            max-width: 320px;
+            img{
+                width: 40px;
             }
         }
     }
@@ -767,14 +783,14 @@ footer{
                 margin-top: 20px;
                 max-width: 720px;
             }
-            .telegram{
-                margin-top: 30px;
-                a{
-                    max-width: 380px;
-                    img{
-                        width: 60px;
-                    }
-                }
+        }
+    }
+    .telegram{
+        margin-top: 30px;
+        a{
+            max-width: 380px;
+            img{
+                width: 60px;
             }
         }
     }
@@ -893,12 +909,13 @@ footer{
             p{
                 margin-top: 30px;
             }
-            .telegram{
-                margin-top: 50px;
-                a{
-                    max-width: 480px;
-                }
-            }
+            
+        }
+    }
+    .telegram{
+        margin-top: 50px;
+        a{
+            max-width: 480px;
         }
     }
 }
@@ -939,4 +956,153 @@ footer{
     }
     
     
+}
+
+.pageContacts{
+    margin-top: 130px;
+    h1{
+        text-align: center;
+        color: #FB9803;
+       
+    }
+    &__content{
+        
+        .info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 55px;
+            &__title{
+                border-bottom: 2px solid #FB9803;
+                max-width: 275px;
+                margin: 0 auto;
+            }
+            &__content{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+                text-align: center;
+                max-width: 800px;
+                width: 100%;
+                padding-left: 42px;
+                p{
+                    font-size: 24px;
+                }
+                .pulse{
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    font-size: 24px;
+                }
+                .contacts{
+                    max-width: 229px;
+                    
+                    margin: 0 auto;
+                    &__phone{
+                        p{
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .telegram{
+                    margin-top: 20px;
+                    a{
+                        max-width: 320px;
+                        justify-content: flex-start;
+                        img{
+                            width: 50px;
+                        }
+                        p{
+                            font-size: 22px;
+                            line-height: 28px;
+                            margin-left: 5px;
+                        }
+                        &:hover{
+                            background: linear-gradient(180deg, rgb(25 112 165 / 50%) 0%, rgb(26 26 88 / 50%) 100%);
+                        }
+                    }
+                    
+                }
+                .consult{
+                    margin-top: 20px;
+                    margin-left: 10px;
+                }    
+                
+            }
+        }
+        .photography{
+            margin-top: 100px;
+            &__title{
+                border-bottom: 2px solid #FB9803;
+                max-width: 152px;
+                margin: 0 auto;
+            }
+            &__content{
+                max-width: 1130px;
+                display: block;
+                margin: 0 auto;
+                p{
+                    font-size: 22px;
+                    line-height: 28px;
+                    margin-bottom: 10px;
+                    text-align: justify;
+                    span{
+                        color: #FB9803;
+                        font-weight: 600;
+                    }
+                }
+                .firstBlock{
+                    margin-top: 25px;
+                    display: flex;
+                    justify-content: space-between;
+                    .img{
+                        width: 27%;
+                        img{
+                            max-width: 100%;
+                            width: 100%;
+                            border-radius: 60px;
+                        }
+                    }
+                    .desc{
+                        width: 70%;
+                    }
+                   
+
+                }
+                
+            }
+        }
+
+    }
+    
+}
+@media screen and (min-width: 1300px){
+    .pageContacts{
+        &__content{
+            .info{
+                &__content{
+                    flex-direction: row;
+                    p{
+                        font-size: 24px;
+                    }
+                    .contacts{
+                        max-width: 229px;
+                        padding-left: 20px;
+                        margin: inherit;
+                        &__phone{
+                            p{
+                                font-size: 18px;
+                            }
+                        }
+                    } 
+                    .telegram{
+                        margin-top: 0;
+                    } 
+                    
+                }
+            }
+        }
+    }
 }
