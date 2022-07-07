@@ -21,3 +21,4 @@ window.onscroll = function() {
       jQuery("header").css({"background": "linear-gradient(180deg, rgba(45, 46, 47, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%"})
     }
 }
+
