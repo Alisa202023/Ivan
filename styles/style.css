@@ -627,6 +627,7 @@ footer .about p {
 }
 footer .about p a {
   color: #F19E21;
+  white-space: nowrap;
 }
 footer .about p a:hover {
   color: #b86f03;
