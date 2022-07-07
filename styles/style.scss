@@ -433,7 +433,6 @@ header{
         }
     }
 }
-
 @media screen and (min-width: 1350px){
     .logo{
         &__img{
@@ -475,7 +474,7 @@ header{
     }
 }
 .container{
-    padding: 0 40px;
+    padding: 0 10px;
 }
 h1{
     font-size: 18px;
@@ -483,15 +482,18 @@ h1{
     font-weight: 900;
     letter-spacing: 0.15em;
     text-transform: uppercase;
+    br{
+        display: none;
+    }
 }
 h2{
-    font-size: 24px;
-    line-height: 39px;
+    font-size: 20px;
+    line-height: 30px;
     font-weight: 500;
 }
 p{
     font-size: 16px;
-    line-height: 20px;
+    line-height: 26px;
     font-weight: 500;
 }
 .orangeButton{
@@ -517,10 +519,6 @@ main .virtual h1, main .advantages h1, main .app h1{
 }
 main .virtual h1, main .app h1, main .virtual__desc, main .virtual__img, main .app__desc, main .app__img{
     width: 100%;
-}
-main .virtual__desc p, main .advantages__item .desc p, main .app__desc p, footer .about p, footer .footer p{
-    font-size: 16px;
-    line-height: 26px;
 }
 main .virtual__desc p, main .app__desc p{
     text-align: justify;        
@@ -609,7 +607,7 @@ main{
     .advantages .containers{
         display: flex;
         justify-content: space-around;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
     }
     .virtual{
@@ -630,7 +628,7 @@ main{
         text-align: center;
     }
     &__items{
-        margin-top: 30px;
+        margin-top: 60px;
     }
     &__item{
         display: flex;
@@ -685,10 +683,7 @@ footer{
     h1{
         font-size: 22px;
         line-height: 30px;
-    }
-    p{
-        font-size: 20px;
-        line-height: 26px;
+        
     }
     main{
         .mainScreen{
@@ -699,6 +694,8 @@ footer{
             p{
                 margin-top: 10px;
                 max-width: 450px;
+                font-size: 20px;
+                line-height: 26px;
             }
         }
     }
@@ -713,16 +710,17 @@ footer{
     }
 }
 @media screen and (min-width: 660px){
-    
+    .container{
+        padding: 0 40px;
+    }
     main .virtual, main .advantages, main .app, footer, .footer{
         margin-top: 130px;
     }
     h1{
         font-size: 24px;
-    }
-    p{
-        font-size: 22px;
-        line-height: 26px;
+        br{
+            display: block;
+        }
     }
     .orangeButton{
         max-width: 125px;
@@ -736,6 +734,8 @@ footer{
             p{
                 margin-top: 10px;
                 max-width: 500px;
+                font-size: 22px;
+                line-height: 26px;
             }
         }
         .virtual .containers, .app .containers{
@@ -752,7 +752,6 @@ footer{
             flex-wrap: wrap;
         }
         .advantages__items{
-            margin-top: 40px;
             width: 49%;
         }
     }
@@ -764,8 +763,8 @@ footer{
         line-height: 40px;
     }
     p{
-        font-size: 26px;
-        line-height: 30px;
+        font-size: 16px;
+        line-height: 26px;
     }
     main{
         .background{
@@ -782,7 +781,12 @@ footer{
             p{
                 margin-top: 20px;
                 max-width: 720px;
+                font-size: 26px;
+                line-height: 30px;
             }
+        }
+        .advantages .containers{
+            flex-direction: row;
         }
     }
     .telegram{
@@ -810,10 +814,6 @@ footer{
     }
     main .virtual h1, main .app h1, main .virtual__desc, main .virtual__img, main .app__desc, main .app__img{
         width: 49%;
-    }
-    main .virtual__desc p, main .advantages__item .desc p, main .app__desc p, footer .about p, footer .footer p{
-        font-size: 16px;
-        line-height: 26px;
     }
     main .virtual__desc p, main .app__desc p{
         text-align: justify;        
@@ -849,7 +849,6 @@ footer{
         }
     }
     main .advantages__items{
-        margin-top: 30px;
         width: inherit;
     }
     main .app__desc{
@@ -860,7 +859,14 @@ footer{
     }
 }
 @media screen and (min-width: 1150px){
-    
+    p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    h2{
+        font-size: 22px;
+        line-height: 30px;
+    }
     .orangeButton{
         font-size: 18px;
         max-width: 155px;
@@ -878,20 +884,13 @@ footer{
     main .virtual h1, main .app h1, main .virtual__desc, main .virtual__img, main .app__desc, main .app__img{
         width: 49%;
     }
-    main .virtual__desc p, main .advantages__item .desc p, main .app__desc p, footer .about p, footer .footer p{
-        font-size: 18px;
-        line-height: 30px;
-    }
 }
 @media screen and (min-width: 1388px){
     h1{
         font-size: 40px;
         line-height: 50px;
     }
-    p{
-        font-size: 32px;
-        line-height: 39px;
-    }
+    
     main{
         .background{
             iframe{
@@ -907,6 +906,8 @@ footer{
                 line-height: 50px;
             }
             p{
+                font-size: 32px;
+                line-height: 39px;
                 margin-top: 30px;
             }
             
@@ -920,6 +921,10 @@ footer{
     }
 }
 @media screen and (min-width: 1650px){
+    p{
+        font-size: 22px;
+        line-height: 34px;
+    }
     .container{
         padding: 0 80px;
     }
@@ -935,15 +940,14 @@ footer{
         font-size: 28px;
         line-height: 50px;
     }
-    main .virtual__desc p, main .advantages__item .desc p, main .app__desc p, footer .about p, footer .footer p{
-        font-size: 22px;
-        line-height: 39px;
-    }
     main .virtual__desc p, main .app__desc p{
         margin-bottom: 20px;
     }
 }
 @media screen and (min-width: 1735px){
+    p{
+        font-size: 24px;
+    }
     .orangeButton{
         font-size: 24px;
         max-width: 185px;
@@ -951,11 +955,6 @@ footer{
     main .virtual h1, main .advantages h1, main .app h1{
         font-size: 34px;
     }
-    main .virtual__desc p, main .advantages__item .desc p, main .app__desc p, footer .about p, footer .footer p{
-        font-size: 24px;
-    }
-    
-    
 }
 
 .pageContacts{
@@ -965,8 +964,7 @@ footer{
         color: #FB9803;
        
     }
-    &__content{
-        
+    &__content{        
         .info{
             display: flex;
             flex-direction: column;
@@ -974,8 +972,8 @@ footer{
             margin-top: 55px;
             &__title{
                 border-bottom: 2px solid #FB9803;
-                max-width: 275px;
-                margin: 0 auto;
+                max-width: 300px;
+                margin: 0 auto 10px auto;
             }
             &__content{
                 display: flex;
@@ -986,10 +984,7 @@ footer{
                 text-align: center;
                 max-width: 800px;
                 width: 100%;
-                padding-left: 42px;
-                p{
-                    font-size: 24px;
-                }
+                padding-left: 0px;
                 .pulse{
                     width: 45px;
                     height: 45px;
@@ -998,7 +993,7 @@ footer{
                 }
                 .contacts{
                     max-width: 229px;
-                    
+                    padding-left: 20px;
                     margin: 0 auto;
                     &__phone{
                         p{
@@ -1015,7 +1010,7 @@ footer{
                             width: 50px;
                         }
                         p{
-                            font-size: 22px;
+                            font-size: 18px;
                             line-height: 28px;
                             margin-left: 5px;
                         }
@@ -1033,19 +1028,17 @@ footer{
             }
         }
         .photography{
-            margin-top: 100px;
+            margin-top: 50px;
             &__title{
                 border-bottom: 2px solid #FB9803;
-                max-width: 152px;
-                margin: 0 auto;
+                max-width: 126px;
+                margin: 0 auto 50px auto;
             }
             &__content{
-                max-width: 1130px;
+                max-width: 1380px;
                 display: block;
                 margin: 0 auto;
                 p{
-                    font-size: 22px;
-                    line-height: 28px;
                     margin-bottom: 10px;
                     text-align: justify;
                     span{
@@ -1057,8 +1050,121 @@ footer{
                     margin-top: 25px;
                     display: flex;
                     justify-content: space-between;
+                    flex-direction: column;
                     .img{
-                        width: 27%;
+                        width: 100%;
+                        order: 2;
+                        display: block;
+                        text-align: center;
+                        img{
+                            margin-top: 10px;
+                            max-width: 100%;
+                            width: 50%;
+                            border-radius: 60px;
+                        }
+                    }
+                    .desc{
+                        width: 100%;
+                        order: 1;
+                    }
+                   
+
+                }
+                
+            }
+        }
+    }
+}
+@media screen and (min-width: 375px){
+    .pageContacts{
+        &__content{        
+            .info{
+                &__content{
+                    .telegram{
+                        a{
+                            p{
+                                font-size: 22px;
+                            }
+                        }
+                    }   
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 640px){
+    .pageContacts{
+        margin-top: 130px;
+        &__content{   
+            .photography{
+                &__content{
+                    .firstBlock{
+                        flex-direction: row;
+                        .img{
+                            width: 30%;
+                            order: 1;
+                            img{
+                                margin-top: 0;
+                                width: 100%;
+                            }
+                        }
+                        .desc{
+                            width: 68%;
+                            order: 2;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 780px){
+    .pageContacts{
+        .photography{
+            &__content{
+                .firstBlock{
+                    .img{
+                        width: 20%;
+                    }
+                    .desc{
+                        width: 78%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 950px){
+    .pageContacts{
+        .photography{
+            &__content{
+                .firstBlock{
+                    .img{
+                        width: 28%;
+                    }
+                    .desc{
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1150px){
+    .pageContacts{
+        .photography{
+            margin-top: 80px;
+            &__title{
+                max-width: 140px;
+                margin: 0 auto 50px auto;
+            }
+            &__content{
+                max-width: 1100px;
+                .firstBlock{
+                    .img{
+                        width: 28%;
                         img{
                             max-width: 100%;
                             width: 100%;
@@ -1068,32 +1174,29 @@ footer{
                     .desc{
                         width: 70%;
                     }
-                   
-
                 }
-                
             }
         }
-
     }
-    
 }
 @media screen and (min-width: 1300px){
+    h2{
+        font-size: 24px;
+        line-height: 32px;
+    }
     .pageContacts{
         &__content{
             .info{
                 &__content{
                     flex-direction: row;
-                    p{
-                        font-size: 24px;
-                    }
+                    padding-left: 42px;
                     .contacts{
-                        max-width: 229px;
+                        max-width: 260px;
                         padding-left: 20px;
                         margin: inherit;
                         &__phone{
                             p{
-                                font-size: 18px;
+                                font-size: 20px;
                             }
                         }
                     } 
@@ -1102,6 +1205,30 @@ footer{
                     } 
                     
                 }
+            }
+        }
+        .photography{
+            &__content{
+                max-width: 1380px;
+            }
+            &__title{
+                max-width: 152px;
+                margin: 0 auto 50px auto;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1650px){
+    h2{
+        font-size: 26px;
+        line-height: 39px;
+        font-weight: 500;
+    }
+    .pageContacts{
+        .photography{
+            &__title{
+                max-width: 164px;
+                margin: 0 auto 50px auto;
             }
         }
     }

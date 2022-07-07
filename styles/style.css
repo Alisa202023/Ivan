@@ -432,7 +432,7 @@ header .header__mobile .bottom__right .menu__mobile ul:first-child .contacts__in
   }
 }
 .container {
-  padding: 0 40px;
+  padding: 0 10px;
 }
 
 h1 {
@@ -442,16 +442,19 @@ h1 {
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
+h1 br {
+  display: none;
+}
 
 h2 {
-  font-size: 24px;
-  line-height: 39px;
+  font-size: 20px;
+  line-height: 30px;
   font-weight: 500;
 }
 
 p {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 26px;
   font-weight: 500;
 }
 
@@ -481,11 +484,6 @@ main .virtual h1, main .advantages h1, main .app h1 {
 
 main .virtual h1, main .app h1, main .virtual__desc, main .virtual__img, main .app__desc, main .app__img {
   width: 100%;
-}
-
-main .virtual__desc p, main .advantages__item .desc p, main .app__desc p, footer .about p, footer .footer p {
-  font-size: 16px;
-  line-height: 26px;
 }
 
 main .virtual__desc p, main .app__desc p {
@@ -576,7 +574,7 @@ main .virtual .containers, main .app .containers {
 main .advantages .containers {
   display: flex;
   justify-content: space-around;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 main .virtual__desc {
@@ -594,7 +592,7 @@ main .virtual__img {
   text-align: center;
 }
 .advantages__items {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 .advantages__item {
   display: flex;
@@ -647,11 +645,6 @@ footer .footer p {
     line-height: 30px;
   }
 
-  p {
-    font-size: 20px;
-    line-height: 26px;
-  }
-
   main .mainScreen h1 {
     max-width: 540px;
     padding-top: 120px;
@@ -659,6 +652,8 @@ footer .footer p {
   main .mainScreen p {
     margin-top: 10px;
     max-width: 450px;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   .telegram {
@@ -672,6 +667,10 @@ footer .footer p {
   }
 }
 @media screen and (min-width: 660px) {
+  .container {
+    padding: 0 40px;
+  }
+
   main .virtual, main .advantages, main .app, footer, .footer {
     margin-top: 130px;
   }
@@ -679,10 +678,8 @@ footer .footer p {
   h1 {
     font-size: 24px;
   }
-
-  p {
-    font-size: 22px;
-    line-height: 26px;
+  h1 br {
+    display: block;
   }
 
   .orangeButton {
@@ -696,6 +693,8 @@ footer .footer p {
   main .mainScreen p {
     margin-top: 10px;
     max-width: 500px;
+    font-size: 22px;
+    line-height: 26px;
   }
   main .virtual .containers, main .app .containers {
     display: flex;
@@ -711,7 +710,6 @@ footer .footer p {
     flex-wrap: wrap;
   }
   main .advantages__items {
-    margin-top: 40px;
     width: 49%;
   }
 }
@@ -722,8 +720,8 @@ footer .footer p {
   }
 
   p {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 26px;
   }
 
   main .background iframe {
@@ -739,6 +737,11 @@ footer .footer p {
   main .mainScreen p {
     margin-top: 20px;
     max-width: 720px;
+    font-size: 26px;
+    line-height: 30px;
+  }
+  main .advantages .containers {
+    flex-direction: row;
   }
 
   .telegram {
@@ -770,11 +773,6 @@ footer .footer p {
 
   main .virtual h1, main .app h1, main .virtual__desc, main .virtual__img, main .app__desc, main .app__img {
     width: 49%;
-  }
-
-  main .virtual__desc p, main .advantages__item .desc p, main .app__desc p, footer .about p, footer .footer p {
-    font-size: 16px;
-    line-height: 26px;
   }
 
   main .virtual__desc p, main .app__desc p {
@@ -813,7 +811,6 @@ footer .footer p {
   }
 
   main .advantages__items {
-    margin-top: 30px;
     width: inherit;
   }
 
@@ -826,6 +823,16 @@ footer .footer p {
   }
 }
 @media screen and (min-width: 1150px) {
+  p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  h2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
   .orangeButton {
     font-size: 18px;
     max-width: 155px;
@@ -846,21 +853,11 @@ footer .footer p {
   main .virtual h1, main .app h1, main .virtual__desc, main .virtual__img, main .app__desc, main .app__img {
     width: 49%;
   }
-
-  main .virtual__desc p, main .advantages__item .desc p, main .app__desc p, footer .about p, footer .footer p {
-    font-size: 18px;
-    line-height: 30px;
-  }
 }
 @media screen and (min-width: 1388px) {
   h1 {
     font-size: 40px;
     line-height: 50px;
-  }
-
-  p {
-    font-size: 32px;
-    line-height: 39px;
   }
 
   main .background iframe {
@@ -876,6 +873,8 @@ footer .footer p {
     line-height: 50px;
   }
   main .mainScreen p {
+    font-size: 32px;
+    line-height: 39px;
     margin-top: 30px;
   }
 
@@ -887,6 +886,11 @@ footer .footer p {
   }
 }
 @media screen and (min-width: 1650px) {
+  p {
+    font-size: 22px;
+    line-height: 34px;
+  }
+
   .container {
     padding: 0 80px;
   }
@@ -906,16 +910,15 @@ footer .footer p {
     line-height: 50px;
   }
 
-  main .virtual__desc p, main .advantages__item .desc p, main .app__desc p, footer .about p, footer .footer p {
-    font-size: 22px;
-    line-height: 39px;
-  }
-
   main .virtual__desc p, main .app__desc p {
     margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1735px) {
+  p {
+    font-size: 24px;
+  }
+
   .orangeButton {
     font-size: 24px;
     max-width: 185px;
@@ -923,10 +926,6 @@ footer .footer p {
 
   main .virtual h1, main .advantages h1, main .app h1 {
     font-size: 34px;
-  }
-
-  main .virtual__desc p, main .advantages__item .desc p, main .app__desc p, footer .about p, footer .footer p {
-    font-size: 24px;
   }
 }
 .pageContacts {
@@ -944,8 +943,8 @@ footer .footer p {
 }
 .pageContacts__content .info__title {
   border-bottom: 2px solid #FB9803;
-  max-width: 275px;
-  margin: 0 auto;
+  max-width: 300px;
+  margin: 0 auto 10px auto;
 }
 .pageContacts__content .info__content {
   display: flex;
@@ -956,10 +955,7 @@ footer .footer p {
   text-align: center;
   max-width: 800px;
   width: 100%;
-  padding-left: 42px;
-}
-.pageContacts__content .info__content p {
-  font-size: 24px;
+  padding-left: 0px;
 }
 .pageContacts__content .info__content .pulse {
   width: 45px;
@@ -969,6 +965,7 @@ footer .footer p {
 }
 .pageContacts__content .info__content .contacts {
   max-width: 229px;
+  padding-left: 20px;
   margin: 0 auto;
 }
 .pageContacts__content .info__content .contacts__phone p {
@@ -985,7 +982,7 @@ footer .footer p {
   width: 50px;
 }
 .pageContacts__content .info__content .telegram a p {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 28px;
   margin-left: 5px;
 }
@@ -997,21 +994,19 @@ footer .footer p {
   margin-left: 10px;
 }
 .pageContacts__content .photography {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .pageContacts__content .photography__title {
   border-bottom: 2px solid #FB9803;
-  max-width: 152px;
-  margin: 0 auto;
+  max-width: 126px;
+  margin: 0 auto 50px auto;
 }
 .pageContacts__content .photography__content {
-  max-width: 1130px;
+  max-width: 1380px;
   display: block;
   margin: 0 auto;
 }
 .pageContacts__content .photography__content p {
-  font-size: 22px;
-  line-height: 28px;
   margin-bottom: 10px;
   text-align: justify;
 }
@@ -1023,35 +1018,127 @@ footer .footer p {
   margin-top: 25px;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 .pageContacts__content .photography__content .firstBlock .img {
-  width: 27%;
+  width: 100%;
+  order: 2;
+  display: block;
+  text-align: center;
 }
 .pageContacts__content .photography__content .firstBlock .img img {
+  margin-top: 10px;
   max-width: 100%;
-  width: 100%;
+  width: 50%;
   border-radius: 60px;
 }
 .pageContacts__content .photography__content .firstBlock .desc {
-  width: 70%;
+  width: 100%;
+  order: 1;
 }
 
-@media screen and (min-width: 1300px) {
-  .pageContacts__content .info__content {
+@media screen and (min-width: 375px) {
+  .pageContacts__content .info__content .telegram a p {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .pageContacts {
+    margin-top: 130px;
+  }
+  .pageContacts__content .photography__content .firstBlock {
     flex-direction: row;
   }
-  .pageContacts__content .info__content p {
+  .pageContacts__content .photography__content .firstBlock .img {
+    width: 30%;
+    order: 1;
+  }
+  .pageContacts__content .photography__content .firstBlock .img img {
+    margin-top: 0;
+    width: 100%;
+  }
+  .pageContacts__content .photography__content .firstBlock .desc {
+    width: 68%;
+    order: 2;
+  }
+}
+@media screen and (min-width: 780px) {
+  .pageContacts .photography__content .firstBlock .img {
+    width: 20%;
+  }
+  .pageContacts .photography__content .firstBlock .desc {
+    width: 78%;
+  }
+}
+@media screen and (min-width: 950px) {
+  .pageContacts .photography__content .firstBlock .img {
+    width: 28%;
+  }
+  .pageContacts .photography__content .firstBlock .desc {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .pageContacts .photography {
+    margin-top: 80px;
+  }
+  .pageContacts .photography__title {
+    max-width: 140px;
+    margin: 0 auto 50px auto;
+  }
+  .pageContacts .photography__content {
+    max-width: 1100px;
+  }
+  .pageContacts .photography__content .firstBlock .img {
+    width: 28%;
+  }
+  .pageContacts .photography__content .firstBlock .img img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 60px;
+  }
+  .pageContacts .photography__content .firstBlock .desc {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  h2 {
     font-size: 24px;
+    line-height: 32px;
+  }
+
+  .pageContacts__content .info__content {
+    flex-direction: row;
+    padding-left: 42px;
   }
   .pageContacts__content .info__content .contacts {
-    max-width: 229px;
+    max-width: 260px;
     padding-left: 20px;
     margin: inherit;
   }
   .pageContacts__content .info__content .contacts__phone p {
-    font-size: 18px;
+    font-size: 20px;
   }
   .pageContacts__content .info__content .telegram {
     margin-top: 0;
+  }
+  .pageContacts .photography__content {
+    max-width: 1380px;
+  }
+  .pageContacts .photography__title {
+    max-width: 152px;
+    margin: 0 auto 50px auto;
+  }
+}
+@media screen and (min-width: 1650px) {
+  h2 {
+    font-size: 26px;
+    line-height: 39px;
+    font-weight: 500;
+  }
+
+  .pageContacts .photography__title {
+    max-width: 164px;
+    margin: 0 auto 50px auto;
   }
 }/*# sourceMappingURL=style.css.map */
