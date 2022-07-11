@@ -430,7 +430,7 @@ header .header__mobile .bottom__right .menu__mobile ul:first-child .contacts__in
 }
 @media screen and (min-width: 1400px) {
   header .header .center {
-    max-width: 750px;
+    max-width: 680px;
   }
   header .header .center .menu nav ul li {
     font-size: 18px;
