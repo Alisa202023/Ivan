@@ -1459,39 +1459,35 @@ footer{
    // overflow: hidden;
     list-style-type: none;
     padding: 0;    
-    margin-left: -5px;
 }
 .photogallery__item {
+    display: block;
     position: relative;
     visibility:hidden;
     outline:1px solid transparent; 
-    margin: 5px auto;
-  
+    margin: 0 auto;
 }
 .photogallery__item::after {
     content:'';
     display:block;
-    padding-bottom: 86.602%; 
+    padding-bottom: 66.602%; 
 }
 .itemIn {
     position: absolute;
-    width: 100%;
-    padding-bottom: 71.851%;
+    width: 96%;
+    padding-bottom: 64.851%;
     margin:0 2%;
    
    // overflow: hidden;
     visibility: hidden;
     outline:1px solid transparent; 
-    -webkit-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
-    -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
-    transform: rotate3d(0,0,1,-60deg) skewY(30deg);
     a{
         &:hover{
             color: #fff;
         }
     }
   
-    }
+}
 .itemIn * {
     margin: 0;
     padding: 0;    
@@ -1502,16 +1498,12 @@ footer{
 }
 .itemLink {
     display:block;
-    border-radius: 30px;
     width: 100%;
-    max-width: 312px;
+    max-height: 330px;
     height: 100%;
     text-align: center;
     color: #fff;
     overflow: hidden;
-    -webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
-    -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
-    transform: skewY(-30deg) rotate3d(0,0,1,60deg);
    // background: #F1CCAE;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
 }
@@ -1524,7 +1516,6 @@ footer{
     //left: -100%;
    // right: -100%;
     width: 100%;
-    border-radius: 30px;
     height: 100%;
     margin: 0 auto;
     -webkit-transform: rotate3d(0,0,0,0deg);
@@ -1556,7 +1547,7 @@ footer{
 .photogallery__item h2 {
     bottom: 50%;
     padding-top:50%;
-    font-size: 18px;
+    font-size: 20px;
     z-index: 1;
     -webkit-transform:translate3d(0,-100%,0);
     -ms-transform:translate3d(0,-100%,0);
@@ -1575,7 +1566,7 @@ footer{
 .photogallery__item p {
     top: 50%;
     padding-bottom:50%;
-    font-size: 16px;
+    font-size: 18px;
     -webkit-transform:translate3d(0,100%,0);
     -ms-transform:translate3d(0,100%,0);
     transform:translate3d(0,100%,0);
@@ -1586,38 +1577,79 @@ footer{
     -ms-transform:translate3d(0,0,0);
     transform:translate3d(0,0,0);
 }
+
 @media (min-width:1201px) { /* сетка 5 - 4 */
     #photogallery{
         padding-bottom: 4.4%
     }
     .photogallery__item {
-        width: 17.90%; 
+        width: 32.33%;
     }
     /*.photogallery__item:nth-child(9n+6){ 
         margin-left:8.5%; 
     }*/
+    .itemIn {
+        padding-bottom: 56.851%;
+      
+    }
+    .photogallery__item::after {
+        padding-bottom: 64.602%; 
+    }
+}
+@media (min-width:1401px) { 
+    .itemIn {
+        padding-bottom: 61.851%;
+      
+    }
 }
 @media (max-width: 1200px) and (min-width:901px) { /* сетка 4 - 3 */
     #photogallery{
         padding-bottom: 5.5%
     }
     .photogallery__item{
-        width: 22%;
+        width: 32.33%;
     }
     /*.photogallery__item:nth-child(7n+5){ 
         margin-left:12.5%; 
     }*/
+
+    .photogallery__item p {
+        font-size: 16px;
+    }
+    .photogallery__item h2 {
+        font-size: 18px;
+    }
+    .itemIn {
+        padding-bottom: 56.851%;
+      
+    }
+    .photogallery__item::after {
+        padding-bottom: 63.602%; 
+    }
 }
 @media (max-width: 900px) and (min-width:601px) { /* сетка 3 - 2 */
     #photogallery{
         padding-bottom: 7.4%
     }
     .photogallery__item{
-        width: 31.333%;
+        width: 31.33%;
     }
     /*.photogallery__item:nth-child(5n+4){ 
         margin-left:16.666%; 
     }*/
+    .photogallery__item p {
+        font-size: 16px;
+    }
+    .photogallery__item h2 {
+        font-size: 18px;
+    }
+    .itemIn {
+        padding-bottom: 52.851%;
+      
+    }
+    .photogallery__item::after {
+        padding-bottom: 63.602%; 
+    }
 }
 @media (max-width: 600px) { /* сетка 2 - 1 */
     #photogallery{
@@ -1626,7 +1658,25 @@ footer{
     .photogallery__item {
         width: 48%; 
     }
+    .photogallery__item p {
+        font-size: 16px;
+    }
+    .photogallery__item h2 {
+        font-size: 18px;
+    }
     /*.photogallery__item:nth-child(3n+3){
         margin-left:25%;
     }*/
+    .itemIn {
+        padding-bottom: 52.851%;
+      
+    }
+    .photogallery__item::after {
+        padding-bottom: 63.602%; 
+    }
+}
+@media (max-width: 480px) { 
+    .photogallery__item {
+        width: 100%; 
+    }
 }
