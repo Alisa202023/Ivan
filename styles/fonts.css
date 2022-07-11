@@ -4,11 +4,4 @@
   font-style: normal;
   src: url(../fonts/InterRegular.woff2), url(../fonts/InterRegular.woff);
   font-display: swap;
-}
-@font-face {
-  font-family: Helvetica;
-  font-weight: 400;
-  font-style: normal;
-  src: url(../fonts/HelveticaNeueCyr-Light.woff2), url(../fonts/HelveticaNeueCyr-Light.woff);
-  font-display: swap;
 }/*# sourceMappingURL=fonts.css.map */
